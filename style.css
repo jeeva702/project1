@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  position: sticky;
+  scroll-margin: 0px;
+  color: rgb(251, 253, 252);
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline;
+  padding-right: 30px;
+  text-transform: uppercase;
+}
+nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+nav li a:hover {
+  color: red;
+}
+/* header nav{
+    position: sticky;
+    top: 0px;
+} */
+nav {
+  padding-top: 30px;
+}
+.check {
+  display: none;
+}
+.checkbtn {
+  float: right;
+  padding-right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.logo {
+  padding-left: 50px;
+}
+h1 {
+  text-align: center;
+  padding-top: 200px;
+  color: aliceblue;
+  font-size: 50px;
+}
+.class1 {
+  text-align: center;
+  color: white;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  /* opacity: -2px; */
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+.class1 p {
+  padding-top: 5px;
+}
+.class1 button {
+  color: rgb(250, 244, 244);
+  background-color: red;
+  margin-top: 20px;
+  border: 0px;
+  padding: 10px;
+}
+.class1 a:hover {
+  color: white;
+}
+
+.class2 .a1 i {
+  color: rgb(238, 35, 103);
+  text-align: center;
+  font-size: 25px;
+}
+
+.class2 .a1 {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding-right: 30px; 
+   padding-left: 50px;
+}
+.class2 {
+  text-align: center;
+  background-color: white;
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-evenly;
+  text-justify: center;
+  /* height: 150px; */
+}
+@media (max-width: 600px) {
+  ul {
+    position: fixed;
+    top: 10%;
+    width: 122%;
+    transition: all 1s;
+    font-size: 20px;
+    padding-top: 70px;
+    padding-bottom: 0px;
+    padding-left: px;
+    background-color: rgb(79, 96, 112);
+    display: none;
+    text-align: center;
+    /* height: 100%; */
+    left: -120%;
+  }
+  nav ul li {
+    padding: 10px;
+    text-align: center;
+  }
+  a:hover {
+    background: none;
+    color: #0082e6;
+  }
+  input[type="checkbox"]:checked ~ ul {
+    left: -100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .checkbtn {
+    display: block;
+  }
+  .class2 {
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 150px; */
+    
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .class2 .a1 {
+    margin: 30px 0;
+    padding-right: 50px; 
+    padding-left: 40px;
+    
+  }
+}
+@media all and (max-width: 375px) {
+  .class2 .a1{
+    margin-top: 20px;
+   
+  }
+  h1{
+    padding-top: 100px;
+  }
+
+}
+@media all and (max-width: 320px) {
+  .class2 .a1 {
+    margin-top: 30px;
+    
+  }
+}
+
+@media all and(max-width: 425px) {
+  .class2 .a1{
+    margin-top: 80px;
+  }
+  h1{
+    padding-top: 80px;
+  }
+}
